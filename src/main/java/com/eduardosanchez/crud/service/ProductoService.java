@@ -26,7 +26,7 @@ public class ProductoService {
     }
 
     public Optional<Producto> getByNombre(String nombre){
-        return productoRepository.finByNombre(nombre);
+        return productoRepository.findByNombre(nombre);
     }
 
     public void save(Producto producto){
